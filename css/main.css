@@ -1,0 +1,353 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* start nav  */
+
+.navbar {
+    background-image: url(../imgs/blue_bg.png);
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 45%;
+}
+
+nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left-side ul {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 500px;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+nav .left-side ul li a {
+    color: #677677;
+}
+
+nav .left-side img {
+    width: 120px;
+    margin-left: -50px;
+}
+
+nav .active::after {
+    content: "";
+    border-bottom: solid 2px #b06bb2;
+    width: 20px;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .right-side {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+nav .right-side a {
+    position: absolute;
+    margin-left: 40px;
+}
+
+nav .right-side h2 {
+    font-size: 17px;
+    color: #677677;
+    text-align: center;
+}
+
+nav .right-side img {
+    width: 120px;
+}
+
+/* end nav  */
+
+/* start landing */
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    position: relative;
+    padding-top: 200px;
+}
+
+.landing .left-land {
+    width: 50%;
+    padding-top: 150px;
+}
+
+.landing .left-land h2 {
+    font-size: 50px;
+    color: #677677;
+}
+
+.landing .left-land h2 span {
+    color: #b06bb2;
+}
+
+.landing .left-land p {
+    font-size: 26px;
+    color: #677677;
+}
+
+.landing .right-land {
+    width: 50%;
+    color: #677677;
+}
+
+.landing .right-land .img-1 {
+    position: absolute;
+    z-index: 5;
+    margin-left: 150px;
+    width: 500px;
+}
+
+.landing .right-land .img-2 {
+    position: absolute;
+    z-index: 6;
+    width: 200px;
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+.landing .right-land .img-3 {
+    position: absolute;
+    z-index: 7;
+    width: 300px;
+    margin-left: 240px;
+    margin-top: 300px;
+}
+
+.landing .img-wave {
+    overflow: hidden;
+    position: absolute;
+    width: 1800px;
+    right: 190px;
+    margin-top: 300px;
+}
+
+/* end landing */
+
+/* start plan */
+
+.planback {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 300px;
+}
+
+.plan {
+    z-index: 5;
+}
+
+.plan .plan-img {
+    text-align: center;
+    width: 375px;
+    position: absolute;
+}
+
+.plan .plan-img h2 {
+    color: #677677;
+    padding: 10px 0;
+}
+
+.plan .plan-img p {
+    color: #677677;
+}
+
+.plan .img-1 {
+    margin-top: 350px;
+}
+
+.plan .img-2 {
+    margin-top: 470px;
+    margin-left: 360px;
+}
+
+.plan .img-3 {
+    margin-top: 685px;
+    margin-left: 700px;
+}
+
+.plan .img-why {
+    position: absolute;
+    margin-top: 700px;
+}
+
+.plan .img-why img {
+    width: 300px;
+}
+
+.plan .img-why div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.plan .img-why div p {
+    font-size: 18px;
+}
+
+.plan .img-why div h2 {
+    font-size: 38px;
+}
+
+/* end plan */
+
+/* start plan-2 */
+.plan-2 {
+    margin-top: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.plan-2 .plan-2-img img {
+    width: 100px;
+}
+
+.plan-info {
+    position: absolute;
+    width: 320px;
+    text-align: center;
+    margin-top: 400px;
+    color: #677677;
+}
+
+.plan-info h2 {
+    padding: 20px 0;
+}
+
+
+/* end plan-2 */
+
+/* start footer */
+
+.background {
+    max-width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: absolute;
+}
+
+footer .background img {
+    width: 110%;
+    background-size: cover;
+    position: relative;
+    right: 25px;
+}
+
+footer .download {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    position: absolute;
+    margin-top: 370px;
+}
+
+footer .download a div {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+footer .download a div img {
+    width: 25px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+footer .download a div h3 {
+    font-size: 13px;
+    margin-right: 10px;
+    color: #72409e;
+}
+
+footer .meida {
+    width: 150px;
+    position: absolute;
+    margin-top: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .meida img {
+width: 35px;
+height: 35px;
+}
+
+footer .nav {
+    width: 350px;
+    position: absolute;
+    margin-top: 500px;
+}
+
+
+footer .nav div ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .nav div ul li a {
+    color: white;
+}
+
+footer .removebg img {
+    width: 600px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 580px;
+}
+/* end footer */
